@@ -36,7 +36,9 @@ fun search(service: GithubService,
 
 interface RepoCallback {
     fun onSuccess(reposNet: List<Repo>)
-    fun onFailure(e: String?)
+    fun onFailure(e: String?) {
+        println(e)
+    }
 }
 
 
